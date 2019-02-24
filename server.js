@@ -6,7 +6,7 @@ const handlebars = require("express-handlebars");
 const path = require("path");
 const Article = require("./models/Article");
 const Note = require("./models/Note");
-const PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 8080;
 const app = express();
 
 //use the deployed database on heroku, Otherwise use the local mongoHeadlines database
