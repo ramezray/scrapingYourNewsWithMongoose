@@ -1,21 +1,8 @@
-//get mongoose to use
-const mongoose = require("mongoose");
-//store mongoose's schema in Schema veriable
+var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
-//create new schema for articles
 var NoteSchema = new Schema({
-    //first col title
-    title: {
-        type: String,
-        required: true
-    },
-    body: {
-        type: String,
-        required: true
-    }
+  title: String,
+  body: String
 });
-
-//will use ArticleSchema modle to create Atrical model
 var Note = mongoose.model("Note", NoteSchema);
-//export our modle
-module.exports = Note
+module.exports = Note;
