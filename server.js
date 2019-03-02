@@ -28,7 +28,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'handlebars');
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 mongoose.connect(MONGODB_URI);
-app.get("/scrape", function (req, res) {
+app.get("/", function (req, res) {
     axios.get("http://medium.com").then(function (response) {
         var $ = cheerio.load(response.data);
         $("article h2").each(function (i, element) {
