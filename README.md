@@ -24,10 +24,10 @@ Scraping Your Articles is a full-stack application that provides  user the abili
 - <strong>Ray Wasif</strong>
 <hr>
 
-## [Click Here to Try the App](https://dashboard.heroku.com/apps/fast-harbor-13320)
+## [Click Here to Try the App](https://fast-harbor-13320.herokuapp.com/)
 
 
 ## Screenshots:
 - Main Page
-![](public/img/app.jpg) 
+![](public/img/app.JPG) 
 
